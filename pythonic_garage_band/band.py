@@ -11,7 +11,9 @@ class Guitarist(Musician):      #(self,name) joan obj in test have a name ('joan
         return f'Guitarist instance. Name = {self.name}'
 
     def get_instrument(self):
-        return 'guitar' 
+        return 'guitar'
+
+    
 
 
 
@@ -19,11 +21,26 @@ class Guitarist(Musician):      #(self,name) joan obj in test have a name ('joan
 
 
 
-class Bassist:
-    name=''
+class Bassist(Musician):
+      def __str__(self):
+         return f'My name is {self.name} and I play bass'
+    
+      def __repr__(self):
+        return f'Bassist instance. Name = {self.name}'
 
-class Drummer:
-    name=''
+      def get_instrument(self):
+        return 'bass'
+
+class Drummer(Musician):
+     def __str__(self):
+         return f'My name is {self.name} and I play drums'
+    
+     def __repr__(self):
+        return f'Drummer instance. Name = {self.name}'
+
+
+     def get_instrument(self):
+        return 'drums'
 
 
 class Band:
