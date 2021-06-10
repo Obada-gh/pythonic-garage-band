@@ -12,15 +12,7 @@ class Guitarist(Musician):      #(self,name) joan obj in test have a name ('joan
 
     def get_instrument(self):
         return 'guitar'
-
-    
-
-
-
-
-
-
-
+   
 class Bassist(Musician):
       def __str__(self):
          return f'My name is {self.name} and I play bass'
@@ -43,5 +35,14 @@ class Drummer(Musician):
         return 'drums'
 
 
-class Band:
-    name=''
+class Band(Musician):
+      def __init__(self,name,members):
+        self.name=name
+        self.members=members
+
+
+      def play_solos(self):
+          for i in self.members:
+              
+
+    
