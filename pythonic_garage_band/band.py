@@ -59,6 +59,8 @@ class Band(Musician):
               soloArr.append(i.play_solo())
           return soloArr
 
+
+
               
 
     
